@@ -1,0 +1,92 @@
+.container {
+   max-width: 480px;
+   margin: 0 auto;
+
+   padding: 0 15px;
+
+   @media screen and (min-width: 480px) and (max-width: 767.9px) {
+      width: 480px;
+      max-width: none;
+      padding: 0 15px;
+   }
+
+   @media screen and (min-width: 768px) {
+      width: 768px;
+      max-width: none;
+      padding: 0 32px;
+   }
+
+   @media screen and (min-width: 1280px) {
+      width: 1280px;
+   }
+}
+
+.sectionHeader {
+   padding: 22px 0 15px 0;
+
+   background: rgb(80, 80, 80);
+   background: linear-gradient(0deg, rgba(80, 80, 80, 1) 0%, rgb(26, 26, 26) 100%);
+
+
+   @media screen and (min-width: 768px) {
+      padding: 50px 0;
+   }
+
+   @media screen and (min-width: 1280px) {
+      padding: 50px 0;
+   }
+}
+
+.contactsWrap {
+   display: flex;
+   flex-direction: column;
+}
+
+.mainHeaderWrap {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+
+
+
+.contactsWrap a {
+   color: var(--text-secondary);
+}
+
+.shopWrap {
+   display: flex;
+   gap: 9px;
+}
+
+.shopButton {
+   background-color: transparent;
+   border: none;
+   padding: 0;
+}
+
+.secondHeaderWrap {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+
+   padding: 8px;
+   background-color: #8F8F8F;
+   border-radius: 5px;
+}
+
+#search {
+   border: none;
+   border-radius: 5px;
+
+   height: 25px;
+}
+
+.searchImg {
+
+   position: absolute;
+   top: 50%;
+   right: 12px;
+
+   transform: translate(0%, -50%);
+}
