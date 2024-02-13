@@ -48,10 +48,22 @@
    margin-bottom: 20px;
 }
 
+.logo {
+   color: var(--text-secondary);
+
+   @media screen and (max-width: 480px) {
+      width: 110px;
+   }
+}
+
 
 
 .contactsWrap a {
    color: var(--text-secondary);
+
+   @media screen and (max-width: 480px) {
+      font-size: 13px;
+   }
 }
 
 .shopWrap {
@@ -63,6 +75,12 @@
    background-color: transparent;
    border: none;
    padding: 0;
+
+
+   @media screen and (max-width: 480px) {
+      width: 30px;
+      height: 30px;
+   }
 }
 
 .secondHeaderWrap {

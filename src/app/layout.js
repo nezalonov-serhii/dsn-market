@@ -1,6 +1,6 @@
 import "./globals.css";
 import Providers from "../../redux/Provider";
-import HeaderLayout from "../components/Header";
+import HeaderLayout from "../components/Header/Header";
 
 export const metadata = {
    title: "Create Next App",

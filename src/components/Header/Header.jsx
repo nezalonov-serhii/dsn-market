@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import Logo from "../../public/logo.svg";
-import Heart from "../../public/heart.svg";
-import Shop from "../../public/shop.svg";
-import Burger from "../../public/burger.svg";
-import Search from "../../public/search.svg";
+import Logo from "../../../public/logo.svg";
+import Heart from "../../../public/heart.svg";
+import Shop from "../../../public/shop.svg";
+import Burger from "../../../public/burger.svg";
+import Search from "../../../public/search.svg";
 
 import styles from "./header.module.css";
 
@@ -15,11 +15,11 @@ export default function HeaderLayout() {
          <div className={styles.container}>
             <div className={styles.mainHeaderWrap}>
                <Link href="/">
-                  <Image src={Logo} alt="Logo" />
+                  <Image src={Logo} alt="Logo" className={styles.logo} />
                </Link>
                <div className={styles.contactsWrap}>
-                  <a href="tel:+380979995086">+38(097) 999-50-86</a>
-                  <a href="tel:+380979995086">+38(097) 999-50-86</a>
+                  <a href="tel:+380979995086">+38 097 999 50 86</a>
+                  <a href="tel:+380979995086">+38 097 999 50 86</a>
                </div>
                <div className={styles.shopWrap}>
                   <button className={styles.shopButton}>
