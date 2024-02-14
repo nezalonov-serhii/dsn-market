@@ -28,4 +28,4 @@ const productSlice = createSlice({
 });
 
 export const { increment, decrement } = productSlice.actions;
-export default productSlice;
+export default productSlice.reducer;
