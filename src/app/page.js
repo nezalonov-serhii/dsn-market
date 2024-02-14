@@ -11,11 +11,11 @@ export default function Home() {
    return (
       <main>
          <section className={styles.section}>
-            <div className={styles.container}>
+            {/* <div className={styles.container}>
                <Products title="Популярне" products={popularProducts} />
                <Products title="Щось новеньке" products={popularProducts} />
                <Products title="Спеціально для Вас" products={popularProducts} />
-            </div>
+            </div> */}
          </section>
       </main>
    );
