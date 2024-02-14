@@ -26,7 +26,7 @@ export default function Products({ products, title }) {
                         <div className={styles.productTitleWrap}>
                            <p className={styles.productTitle}>{product.title}</p>
                            <div className={styles.productPriceWrap}>
-                              <p className={styles.productPrice}>{product.price}</p>
+                              <p className={styles.productPrice}>{product.price} грн.</p>
                               <button className={styles.productBuyBtn}>
                                  <Image src={ShopIcon} alt={product.title} width={30}></Image>
                               </button>
