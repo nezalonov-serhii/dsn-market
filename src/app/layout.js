@@ -11,8 +11,10 @@ export default function RootLayout({ children }) {
    return (
       <html lang="en">
          <body>
-            <HeaderLayout />
-            <Providers>{children}</Providers>
+            <Providers>
+               <HeaderLayout />
+               <main>{children}</main>
+            </Providers>
          </body>
       </html>
    );

@@ -1,4 +1,17 @@
+.section {
+  padding: 25px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 50px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 50px 0;
+  }
+}
+
 .container {
+
   max-width: 480px;
   margin: 0 auto;
 
@@ -18,17 +31,5 @@
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
-  }
-}
-
-.section {
-  padding: 25px 0;
-
-  @media screen and (min-width: 768px) {
-    padding: 50px 0;
-  }
-
-  @media screen and (min-width: 1280px) {
-    padding: 50px 0;
   }
 }

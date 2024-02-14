@@ -1,9 +1,13 @@
   :root {
 
     --background-primary: #f0f0f0;
+    --background-secondary: #D9D9D9;
+
     --text-primary: #161616;
     --text-secondary: #f7f7f7;
     --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+    --accent: #4073F4;
   }
 
   *,
