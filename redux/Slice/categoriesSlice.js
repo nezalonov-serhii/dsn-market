@@ -13,6 +13,7 @@ const initialState = [
 const categoriesSlice = createSlice({
    name: "categories",
    initialState,
+
    reducers: {
       increment: (state) => {
          state.value += 1;

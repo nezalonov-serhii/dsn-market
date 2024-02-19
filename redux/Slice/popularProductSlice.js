@@ -2,26 +2,31 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [
    {
+      id: 1,
       title: "Світлодіодні лампи LED Guarand 7S H1 ZES 5000k 6000Lm 12-24v",
       image: "",
       price: 845,
    },
    {
+      id: 2,
       title: "Світлодіодні лампи LED Guarand 7S H1 ZES 5000k 6000Lm 12-24v",
       image: "",
       price: 845,
    },
    {
+      id: 3,
       title: "Світлодіодні лампи LED Guarand 7S H1 ZES 5000k 6000Lm 12-24v",
       image: "",
       price: 845,
    },
    {
+      id: 4,
       title: "Світлодіодні лампи LED Guarand 7S H1 ZES 5000k 6000Lm 12-24v",
       image: "",
       price: 845,
    },
    {
+      id: 5,
       title: "Світлодіодні лампи LED Guarand 7S H1 ZES 5000k 6000Lm 12-24v",
       image: "",
       price: 845,
