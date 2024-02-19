@@ -18,14 +18,11 @@ export default function HeaderLayout() {
          <div className={styles.container}>
             <div className={styles.mainHeaderWrap}>
                <Logo href="/"></Logo>
-               <div className={styles.contactsWrap}>
-                  <a href="tel:+380979995086">+38 097 999 50 86</a>
-                  <a href="tel:+380979995086">+38 097 999 50 86</a>
-               </div>
-               <div className={styles.shopWrap}>
-                  <button className={styles.shopButton}>
-                     <Image src={Heart} alt="Heart" />
-                  </button>
+               <div className={styles.headerWrap}>
+                  <div className={styles.contactsWrap}>
+                     <a href="tel:+380979995086">+38 097 999 50 86</a>
+                     <a href="tel:+380979995086">+38 097 999 50 86</a>
+                  </div>
                   <Link href="/basket">
                      <button className={styles.shopButton}>
                         <Image src={Shop} alt="Shop" />

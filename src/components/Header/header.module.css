@@ -23,7 +23,12 @@
 
 .sectionHeader {
    padding: 0 0 15px 0;
+   margin-top: -134px;
 
+   position: fixed;
+   z-index: 999;
+
+   width: 100vw;
 
    background: rgb(80, 80, 80);
    background: linear-gradient(0deg, rgba(80, 80, 80, 1) 0%, rgb(26, 26, 26) 100%);
@@ -42,11 +47,14 @@
 .mainHeaderWrap {
    display: flex;
    justify-content: space-between;
-   margin-bottom: 22px;
+   margin-bottom: 15px;
 }
 
 
-
+.headerWrap {
+   display: flex;
+   gap: 10px;
+}
 
 
 .contactsWrap a {
@@ -57,10 +65,6 @@
    }
 }
 
-.shopWrap {
-   display: flex;
-   gap: 9px;
-}
 
 .shopButton {
    position: relative;
