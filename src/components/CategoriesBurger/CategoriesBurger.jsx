@@ -14,7 +14,7 @@ import { useEffect, useState } from "react";
 import { useScreenWidth } from "../../../hooks";
 
 export default function CategoriesBurger() {
-   const categories = useSelector((state) => state.categories);
+   const allCategories = useSelector((state) => state.allCategories);
    const [openBurger, setOpenBurger] = useState(styles.burgerClose);
 
    const { mobile } = useScreenWidth();
@@ -34,10 +34,10 @@ export default function CategoriesBurger() {
    return (
       <div className={styles.secondHeaderWrap}>
          <button className={styles.shopButton} onClick={() => setOpenBurger(styles.burgerOpen)}>
-            <Image src={Burger} alt="Shop" />
+            <Image src={Burger} alt="Shop" width="30" height="30" />
          </button>
          <input type="text" name="search" id={styles.search} />
-         <Image src={Search} alt="Search" className={styles.searchImg} />
+         <Image src={Search} alt="Search" className={styles.searchImg} width="18" height="18" />
 
          {/* Burger  */}
          <div className={openBurger}>
@@ -50,12 +50,22 @@ export default function CategoriesBurger() {
             <h3 className={styles.burgerTitle}>Каталог</h3>
             <nav>
                <ul className={styles.burgerList}>
-                  {categories.map((category) => {
+                  {allCategories.map((category) => {
                      return (
                         <li key={category.eng} className={styles.burgerItem}>
-                           <Link href={`/${category.eng}`} className={styles.burgerLink}>
+                           <Link
+                              href={`/${category.eng}`}
+                              className={styles.burgerLink}
+                              onClick={() => setOpenBurger(styles.burgerClose)}
+                           >
                               {category.ua}
-                              <Image src={Arrow} alt={`Navigate to  ${category.ua}`}></Image>
+                              <Image
+                                 src={Arrow}
+                                 alt={`Navigate to  ${category.ua}`}
+                                 className={styles.navArrow}
+                                 width="8"
+                                 height="12"
+                              />
                            </Link>
                         </li>
                      );

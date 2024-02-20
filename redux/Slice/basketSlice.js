@@ -9,7 +9,7 @@ const initialState = [
       amount: 1,
    },
    {
-      id: 1,
+      id: 2,
       title: "Світлодіодні лампи LED Guarand 7S H1 ZES 5000k 6000Lm 12-24v",
       image: "",
       price: 845,

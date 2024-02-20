@@ -1,14 +1,30 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = [
-   { eng: "autoelectronics", ua: "Автоелектроніка" },
-   { eng: "car-audio", ua: "Автозвук" },
-   { eng: "auto-light", ua: "Авто світло" },
-   { eng: "multimedia", ua: "Автомагнітоли / Мультимедія" },
-   { eng: "accessories", ua: "Головні пристрої / Аксесуари" },
-   { eng: "security-systems", ua: "Охоронні системи" },
-   { eng: "brand-souvenirs", ua: "Брендові сувеніри" },
-];
+const initialState = {
+   eng: "autoelectronics",
+   ua: "Автоелектроніка",
+   subcategories: [
+      { value: "video-recorders", label: "Відеореєстратори" },
+      { value: "window-closers", label: "Доводчики вікон" },
+      { value: "navigation", label: "Навігація" },
+      { value: "seat-heaters", label: "Підігрів сидінь" },
+      { value: "parking-systems", label: "Паркувальні системи" },
+   ],
+   products: [
+      {
+         id: 1,
+         title: "Світлодіодні лампи LED Guarand 7S H1 ZES 5000k 6000Lm 12-24v",
+         image: "",
+         price: 845,
+      },
+      {
+         id: 2,
+         title: "Лампи LED Guarand 7S H1 ZES 5000k 6000Lm 12-24v",
+         image: "",
+         price: 45,
+      },
+   ],
+};
 
 const categoriesSlice = createSlice({
    name: "categories",
