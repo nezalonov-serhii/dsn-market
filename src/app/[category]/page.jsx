@@ -58,7 +58,7 @@ export default function Category({ params }) {
    return (
       <section className={styles.section}>
          <div className={styles.container}>
-            <h1 className={styles.title}>{subcategories.label}</h1>
+            <h1 className={styles.title}>{params.category}</h1>
             <div className={styles.filterWrap}>
                <Select
                   options={categories.subcategories}
