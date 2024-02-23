@@ -5,8 +5,8 @@ import Select from "react-select";
 import Link from "next/link";
 import Image from "next/image";
 
-import PlaceHolder from "../../../public/11559.jpg";
-import Shop from "../../../public/shop.svg";
+import PlaceHolder from "../../../../public/11559.jpg";
+import Shop from "../../../../public/shop.svg";
 
 import styles from "./category.module.css";
 import { useEffect, useState } from "react";

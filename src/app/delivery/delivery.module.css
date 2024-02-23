@@ -1,0 +1,56 @@
+   .section {
+       padding: 25px 0 25px 0;
+
+       @media screen and (min-width: 768px) {
+           padding: 50px 0;
+       }
+
+       @media screen and (min-width: 1280px) {
+           padding: 50px 0;
+       }
+   }
+
+   .container {
+       max-width: 480px;
+       margin: 0 auto;
+
+       padding: 0 15px;
+
+       display: flex;
+       flex-direction: column;
+
+       gap: 25px;
+
+       @media screen and (min-width: 480px) and (max-width: 767.9px) {
+           width: 480px;
+           max-width: none;
+           padding: 0 15px;
+       }
+
+       @media screen and (min-width: 768px) {
+           width: 768px;
+           max-width: none;
+           padding: 0 32px;
+       }
+
+       @media screen and (min-width: 1280px) {
+           width: 1280px;
+       }
+   }
+
+   .title {
+       text-align: center;
+
+       font-size: 22px;
+       font-weight: 700;
+
+   }
+
+   .subTitle {
+       display: block;
+       margin-bottom: 8px;
+
+       font-size: 18px;
+       font-weight: 700;
+
+   }

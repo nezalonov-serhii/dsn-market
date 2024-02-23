@@ -54,7 +54,7 @@ export default function CategoriesBurger() {
                      return (
                         <li key={category.eng} className={styles.burgerItem}>
                            <Link
-                              href={`/${category.eng}`}
+                              href={`/categories/${category.eng}`}
                               className={styles.burgerLink}
                               onClick={() => setOpenBurger(styles.burgerClose)}
                            >
