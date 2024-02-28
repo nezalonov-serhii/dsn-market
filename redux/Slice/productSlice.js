@@ -16,6 +16,7 @@ const initialState = {
    category: [
       { value: "video-recorders", label: "Відеореєстратори" },
       { value: "window-closers", label: "Доводчики вікон" },
+      { value: "closers", label: "Доводчики" },
    ],
 };
 
