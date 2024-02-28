@@ -13,6 +13,10 @@ const initialState = {
       "Пульт дистанційного управління",
       "Посібник користувача",
    ],
+   category: [
+      { value: "video-recorders", label: "Відеореєстратори" },
+      { value: "window-closers", label: "Доводчики вікон" },
+   ],
 };
 
 const productSlice = createSlice({
