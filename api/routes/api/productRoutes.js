@@ -1,18 +1,22 @@
 const express = require("express");
-const authenticate = require("../../middlewares/authenticate");
 const productController = require("../../controllers/productController");
-const router = express.Router();
+const multer = require("../../middlewares/multer");
 const { checkReqParams } = require("../../helpers");
 
-// router.use(authenticate);
+const router = express.Router();
 
 router.get("/", productController.getAllProduct);
+
+router.delete("/:id", productController.deleteProduct);
+
+// Используйте middleware multer для обработки изображений в запросе
+router.post("/", multer.array("images", 7), productController.createProduct);
 
 router.get("/category-list", productController.getCategoriesList);
 
 router.get("/main-page", productController.mainPageProduct);
 
-router.get("/id/:id", productController.getProductById);
+router.get("/:id", productController.getProductById);
 
 router.get("/:category", checkReqParams, productController.getProductByCategory);
 

@@ -10,6 +10,10 @@ const recipeSchema = new Schema({
       type: Array,
       required: [true, "Set product category"],
    },
+   subcategories: {
+      type: Array,
+      default: [],
+   },
 
    description: {
       type: String,
@@ -21,9 +25,13 @@ const recipeSchema = new Schema({
       required: [true, "Set product price"],
    },
 
-   image: {
+   images: {
+      type: Array,
+      default: [],
+   },
+
+   imgPublicId: {
       type: String,
-      default: "",
    },
 
    contentsDelivery: {
@@ -40,6 +48,18 @@ const recipeSchema = new Schema({
    owner: {
       type: Schema.Types.ObjectId,
       ref: "user",
+   },
+   popular: {
+      type: Number,
+      default: 0,
+   },
+   article: {
+      type: Number,
+   },
+
+   createdAt: {
+      type: Date,
+      default: Date.now,
    },
 });
 
