@@ -4,8 +4,9 @@
    "private": true,
    "scripts": {
       "build": "next build",
-      "dev": "cross-env NODE_ENV=development nodemon server/server.js",
-      "start": "node api/server.js",
+      "dev": "next dev",
+      "start": "next start",
+      "server": "cross-env NODE_ENV=development nodemon api/server.js",
       "lint": "next lint"
    },
    "dependencies": {

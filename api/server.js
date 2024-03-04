@@ -1,5 +1,6 @@
 const next = require("next");
 const express = require("express");
+const { createServer } = require("http");
 const connectDB = require("./config/db_connect");
 const logger = require("morgan");
 const cors = require("cors");
@@ -14,6 +15,8 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
    const server = express();
    const formatsLogger = server.get("env") === "development" ? "dev" : "short";
+
+   console.log("123");
 
    server.use(express.static("public"));
    server.use(logger(formatsLogger));
@@ -37,8 +40,11 @@ app.prepare().then(() => {
    connectDB();
 
    const port = process.env.PORT || 3000;
-   server.listen(port, (err) => {
+   createServer(server).listen(port, (err) => {
       if (err) throw err;
       console.log(`> Ready on http://localhost:${port}`);
    });
 });
+
+// "dev": "cross-env NODE_ENV=development nodemon api/server.js",
+// "start": "node api/server.js",
