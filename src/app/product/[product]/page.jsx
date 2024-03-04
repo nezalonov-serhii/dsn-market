@@ -4,13 +4,15 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./productCard.module.css";
 
+const URL = process.env.NEXT_PUBLIC_API_URL;
+
 export default function ProductCard({ params }) {
    const [productData, setProductData] = useState(null);
 
    useEffect(() => {
       const fetchProduct = async () => {
          try {
-            const response = await fetch(`http://localhost:3000/api/products/${params.product}`);
+            const response = await fetch(`${URL}api/products/${params.product}`);
 
             if (!response.ok) {
                throw new Error("Failed to fetch product data");

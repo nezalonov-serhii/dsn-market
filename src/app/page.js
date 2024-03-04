@@ -4,13 +4,15 @@ import Products from "../components/Products/Products";
 
 import styles from "./page.module.css";
 
+const URL = process.env.NEXT_PUBLIC_API_URL;
+
 export default function Home() {
    const [products, setProducts] = useState({});
 
    useEffect(() => {
       const fetchData = async () => {
          try {
-            const response = await fetch("http://localhost:3000/api/products/main-page");
+            const response = await fetch(`${URL}api/products/main-page`);
             if (response.ok) {
                const data = await response.json();
                setProducts(data);
